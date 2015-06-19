@@ -1,0 +1,99 @@
+@extends('layout.master')
+
+@section('content')
+
+    <div class="container container-intro">
+        <div class="intro">
+            <div class="intro-text">
+                <h1>
+                    <strong>Our</strong> Success <br>
+                    is <strong>your</strong> success
+                </h1>
+                <p>We are very patient and peaceful as smooth jazz.</p>
+                <div>
+                    <a href="{{ route('user.login', 'google') }}" class="btn btn-google">Google</a>
+                    <a href="{{ route('user.login', 'github') }}" class="btn btn-github">GitHub</a>
+                </div>
+            </div>
+            <div class="preview">
+                <img src="img/restboat-preview.png" alt="RestBoat Preview">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="feature-icon">
+                        <i class="fa fa-bicycle"></i>
+                    </div>
+                    <h3 class="feature-title">cycling</h3>
+                    <p class="feature-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h3 class="feature-title">coding</h3>
+                    <p class="feature-description">
+                        Ut enim ad minim veniattm, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature-icon">
+                        <i class="fa fa-terminal"></i>
+                    </div>
+                    <h3 class="feature-title">hacking</h3>
+                    <p class="feature-description">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-functionality">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-push-8 preview-right">
+                    <div class="functionality-preview">
+                        <img src="img/request.png" alt="Request">
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-pull-4">
+                    <h4 class="functionality-subtitle">The Workflow</h4>
+                    <h2 class="functionality-title">Request Handling</h2>
+                    <p class="functionality-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Ut enim ad minim veniattm, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-functionality">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 preview-left">
+                    <div class="functionality-preview">
+                        <img src="img/response.png" alt="Response">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="functionality-subtitle">The Workflow</h4>
+                    <h2 class="functionality-title">Response Management</h2>
+                    <p class="functionality-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Ut enim ad minim veniattm, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+@stop

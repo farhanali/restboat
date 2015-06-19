@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Restboat
+        psr4_prefix: Restboat
+        src_path: app
