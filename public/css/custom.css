@@ -16,9 +16,9 @@
     padding-left: 0px;
 }
 .container-empty {
-    height: 75vh;
-    padding-top: 20vh;
-    font-size: 16px;
+    height: 80vh;
+    padding-top: 15vh;
+    font-size: 14px;
 }
 .container-features .row > div {
     border-right: none;
