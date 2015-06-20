@@ -1,5 +1,13 @@
 /vendor
 /node_modules
 .env
+.env.local
+.env.aws
 .idea/
 _ide_helper.php
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.ebignore
