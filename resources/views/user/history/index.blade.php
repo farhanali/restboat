@@ -1,7 +1,6 @@
 @extends('layout.master')
 
 @section('head')
-    <title>Restboat Home</title>
     <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css" rel="stylesheet">
 @stop
 
