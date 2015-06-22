@@ -19,6 +19,16 @@ class Request extends BaseModel implements HasPresenter {
     protected $fillable = array('user_id', 'path');
 
     /**
+     * Mutator for path, remove forwarding and trailing slashes.
+     *
+     * @param $value
+     */
+    public function setPathAttribute($value)
+    {
+        $this->attributes['path'] = trim($value, '/');
+    }
+
+    /**
      * Get the user own this request.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -57,5 +67,5 @@ class Request extends BaseModel implements HasPresenter {
     {
         return 'Restboat\Presenters\RequestPresenter';
     }
-
+    
 }
