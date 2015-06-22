@@ -16,7 +16,7 @@
                                     <span class="help-block">{{ $errors->first('path') }}</span>
                                 @endif
                                 <div class="input-group">
-                                    <span class="input-group-addon">mock.restboat.com/{{ Auth::user()->preferences->user_identifier }}</span>
+                                    <span class="input-group-addon">mock.restboat.com/{{ Auth::user()->preferences->user_identifier }}/</span>
                                     <input type="text" class="form-control" name="path" placeholder="api/v1/..">
                                     <span class="input-group-addon">/</span>
                                 </div>
