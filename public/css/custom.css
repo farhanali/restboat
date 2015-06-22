@@ -36,4 +36,10 @@
     .container-functionality .preview-right {
         text-align: center;
     }
+    .request-details {
+        margin-top: 30px;
+    }
+    .input-group-addon:first-child {
+        max-width: 50px;
+    }
 }
