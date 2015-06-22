@@ -6,10 +6,10 @@
         <div class="intro">
             <div class="intro-text">
                 <h1>
-                    <strong>REST</strong> yourself <br>
-                    we <strong>BOAT</strong> your Requests
+                    <strong>KEEP</strong> Requests <br>
+                    and <strong>MOCK</strong> Responses
                 </h1>
-                <p>Get your RESTful mock server ready within minutes !<br/> Collect Requests & Mock Responses !. Go on by signing with...</p>
+                <p>Get your RESTful mock server ready within minutes !<br/>Go on by signing with...</p>
                 <div>
                     <a href="{{ route('user.login', 'google') }}" class="btn btn-google">Google</a>
                     <a href="{{ route('user.login', 'github') }}" class="btn btn-github">GitHub</a>

@@ -28,3 +28,12 @@
     border-right: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
 }
+.navbar-toggle .icon-bar {
+    background-color: #666666;
+}
+@media (max-width: 991px) {
+    .container-functionality .preview-left,
+    .container-functionality .preview-right {
+        text-align: center;
+    }
+}

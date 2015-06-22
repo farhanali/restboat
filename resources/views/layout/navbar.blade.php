@@ -31,7 +31,7 @@
             </div>
         @else
             <div id="nav-collapse" class="collapse navbar-collapse">
-                <a href="https://github.com/farhanali/restboat" class="navbar-right navbar-link"><img src="img/github.png" alt="GitHub" class="avatar"></a>
+                <a href="https://github.com/farhanali/restboat" class="navbar-right navbar-link" target="github"><img src="img/github.png" alt="GitHub" class="avatar"></a>
             </div>
         @endif
     </div>
