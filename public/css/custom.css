@@ -1,3 +1,6 @@
+a:focus, button:focus {
+    outline: none;
+}
 .navbar-brand small {
     font-size: 13px;
 }
@@ -41,5 +44,11 @@
     }
     .input-group-addon:first-child {
         max-width: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .container-features .row .bordered {
+        border-right: none;
+        border-left: none;
     }
 }
