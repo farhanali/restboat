@@ -11,6 +11,15 @@
 |
 */
 
+// farhan-website routes
+Route::group(['domain' => 'www.farhanali.in'], function() {
+
+    Route::get('/', function() {
+        return response()->view('farhan-website.index');
+    });
+
+});
+
 // mock server routes
 Route::group(['domain' => 'mock.restboat.com'], function() {
 

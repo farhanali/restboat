@@ -1,0 +1,92 @@
+body {
+    margin: 30px 15px;
+    color: #555;
+    background-color: #fff;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: "Open Sans", FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+}
+
+.info {
+    text-align: center;
+}
+.avatar img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50px;
+}
+
+.name {
+    font-size: 1.7em;
+    font-weight: normal;
+    margin-bottom: -10px;
+}
+.email, .social {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.works {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-bottom: 100px;
+}
+.works ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+.works .project-title {
+    font-weight: normal;
+}
+
+@media screen and (min-width: 35.5em) {
+    .info {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .avatar {
+        width: 125px;
+        float: left;
+    }
+    .name {
+        margin: 0;
+    }
+    .designation, .contact {
+        margin: 0.5em 0;
+    }
+    .email, .social {
+        display: inline-block;
+    }
+    .social {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    body {
+        max-width: 48em;
+        padding: 30px;
+        margin: 2em auto;
+    }
+
+    .works {
+        margin-bottom: 0;
+    }
+}
