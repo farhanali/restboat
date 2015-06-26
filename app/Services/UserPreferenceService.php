@@ -61,7 +61,7 @@ class UserPreferenceService {
 
         flash()->success('Preferences Saved ..! ');
 
-        return redirect()->route('user.preferences');
+        return redirect()->route('index');
     }
 
     /**

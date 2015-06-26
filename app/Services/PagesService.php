@@ -1,6 +1,7 @@
 <?php  namespace Restboat\Services; 
 
 use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Session\Store;
 use Restboat\Models\User;
 use Restboat\Repositories\RequestLogRepository;
 
@@ -12,21 +13,30 @@ class PagesService {
     private $auth;
 
     /**
-     * @param \Illuminate\Contracts\Auth\Guard $auth
+     * @var \Illuminate\Session\Store
      */
-    function __construct(Guard $auth)
+    private $sesion;
+
+    /**
+     * @param \Illuminate\Contracts\Auth\Guard $auth
+     * @param \Illuminate\Session\Store $session
+     */
+    function __construct(Guard $auth, Store $session)
     {
         $this->auth     = $auth;
+        $this->session  = $session;
     }
 
     /**
+     * Redirect to user home if user has set user_identifier else to user preference page to set one,
+     * if user not logged in redirect to public home.
+     *
      * @return \Illuminate\Http\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function getIndex()
     {
-        // Show user home if user has set user_identifier
-        // else show user preference page to set one
-        // If user not logged in show public home.
+        $this->session->reflash();
+
         if ($this->auth->check())
         {
             return $this->hasSetIdentifier()
