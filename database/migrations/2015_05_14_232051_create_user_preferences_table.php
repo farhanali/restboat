@@ -35,7 +35,7 @@ class CreateUserPreferencesTable extends Migration
             $table->timestamps();
 
             // indexes
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
