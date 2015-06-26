@@ -19,9 +19,23 @@ a:focus, button:focus {
     padding-left: 0px;
 }
 .container-empty {
-    height: 80vh;
-    padding-top: 15vh;
-    font-size: 14px;
+    padding-bottom: 30px;
+}
+.container-empty code {
+    background-color: #eeeeee;
+    color: #222222;
+}
+.container-empty blockquote {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-left: 2px solid #cccccc;
+}
+.container-empty .instruction-block {
+    margin-top: 30px;
+}
+.container-empty .instruction-block h3{
+    margin-bottom: 20px;
 }
 .container-features .row > div {
     border-right: none;
